@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="(max-width:775px)" href="stylesm.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <script src="main.js"></script>
+
+    <title>Covid Tracker - Siddharth Saumya</title>
+
+
+
+
+</head>
+
+<body>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmlson.js@1.0.4/src/htmlson.js"></script>
+
+    <title>Covid-19 Tracker India</title>
+
+    </head>
+
+    <body>
+        <div>
+            <a href="http://siddharthsaumya.me/p/">
+                <img src="home.png" style="width:3.5em;position: absolute; top:20px; right:20px;" alt=""></a>
+        </div>
+
+        <div class="container-fluid  p-2  text-center my-1">
+            <img src="main.png" alt="logo image" style="width:200px;height:200px;">
+            <h1 style="font-weight: bolder;" class="font-0">Covid-19 Tracker India</h1>
+        </div>
+
+        <div class="container my-5 p-2">
+            <div class="row grid-row text-center">
+                <div class="col-3 ">
+                    <h5 style=" font-weight: bolder;" class="blue-text font-3">Confirmed</h5>
+                    <p id="confirmed" class="blue-text font-2"></p>
+                </div>
+                <div class="col-3">
+                    <h5 style="font-weight: bolder;" class="yellow-text font-3">Active</h5>
+                    <p id="active" class="yellow-text font-2"></p>
+                </div>
+                <div class="col-3">
+                    <h5 style="font-weight: bolder;" class="green-text font-3">Recovered</h5>
+                    <p id="recovered" class="green-text font-2"></p>
+                </div>
+                <div class="col-3">
+                    <h5 style="font-weight: bolder;" class="red-text font-3">Dead</h5>
+                    <p id="deaths" class="red-text font-2"></p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <br>
+        <div class=" container  p-1 my-1 text-center">
+            <h5 style="font-weight: bolder;" class="font-1">Growth Rate in last 7 days</h5>
+            <p id="Growth" class="font-2 red-text"></p>
+        </div>
+        <div class=" container p-1 my-1 text-center">
+            <h5 style="font-weight: bolder;" class="font-1">Prediction for Total Cases After 7 days in India</h5>
+            <p id="predict" class="red-text font-2"></p>
+        </div>
+        <br><br><br>
+        <div class="text-center">
+            <span class="container font-1  p-1 my-1 text-center">Covid-19 Cases India Total </span>
+        </div>
+        <canvas id="myChart2" class="noHover font-0" width="10vw" height="3vh"></canvas>
+        <br><br>
+        <div>
+            <h4 class="container font-1   p-1 my-1 text-center">Covid-19 Cases India-Timeline </h4>
+        </div>
+
+        <canvas id="myChart"></canvas>
+        <br><br><br>
+        <div>
+            <h4 class="container  font-1   p-1 my-1 text-center">Covid-19 Cases India-State Wise </h4>
+        </div>
+        <canvas id="myChart3"></canvas>
+        <br><br><br>
+        <div>
+            <h4 class="container font-2   p-1 my-1 text-center">Covid-19 Cases India State Wise Count </h4>
+        </div>
+        <div class="container-fluid">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th class="font-4" scope="col">States</th>
+                            <th class="font-4" scope="col">Confirmed</th>
+                            <th class="font-4" scope="col">Active</th>
+                            <th class="font-4" scope="col">Recovered</th>
+                            <th class="font-4" scope="col">Deceased</th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-4">
+                    </tbody>
+                </table>
+                </table>
+            </div>
+        </div>
+
+
+        <footer class="footer mt-auto py-3 bg-dark">
+
+            <div style="padding: 27.5vh 0vw;" class="container font-1 white-text text-center">
+
+                Stay Updated<br>Stay Safe<br>Made with Turu-Lob❤️ by <a style="color:rgb(240, 91, 54);" href="http://siddharthsaumya.me/p/contact.html">Siddharth</a>
+            </div>
+
+
+        </footer>
+    </body>
+
+</html>

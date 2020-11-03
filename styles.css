@@ -1,0 +1,58 @@
+.lineChartContainer {
+    height: 500px;
+    padding: 20px 5px;
+    background-color: white;
+}
+
+.red-text {
+    color: #fc5151;
+}
+
+.white-text {
+    color: white;
+}
+
+.blue-text {
+    color: #499ae6;
+}
+
+.green-text {
+    color: #71d183;
+}
+
+.yellow-text {
+    color: #f5df7f;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+.font-0 {
+    font-weight: bolder;
+    font-size: 5em;
+}
+
+.font-1 {
+    font-weight: bolder;
+    font-size: 4em;
+}
+
+.font-2 {
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.font-3 {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.font-4 {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.full-screen {
+    height: 100vh;
+}
